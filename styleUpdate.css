@@ -1,0 +1,1420 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+background: #282828;
+font-family: 'Julius Sans One', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* ---------------HEADER---------------  */
+header {
+width: 100%;
+height: 60px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+.logo {
+	color: #A38B5F;
+	font-size: 50px;
+}
+ul {
+  display: flex;
+}
+li {
+  padding: 0 20px;
+  color: #A38B5F;
+}
+a {
+  text-decoration: none;
+  color: #282828;
+}
+a:hover {
+  color: white;
+}
+.nav-icons {
+  width: 100%;
+	color: #A38B5F;
+}
+.navBook {
+	color: #A38B5F;
+}
+nav img{
+  display: none;
+}
+
+
+/* ---------------MAIN---------------  */
+.main {
+  width: 100%;
+  height: 1000px;
+  background-image: url(./imgs/mainPhoto.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom-right-radius: 300px;
+  clip-path: polygon(0 80%, 0 0, 100% 0, 100% 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 200px 0 0 150px;
+  position: relative;
+}
+
+.mainHeadline {
+  font-size: 80px;
+  font-weight: bold;
+	color: lightgray;
+  padding-bottom: 20px;
+}
+.mainStatement {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+  letter-spacing: 5px;
+	color: lightgray;
+}
+.mainButton1 {
+  height: 60px;
+  width: 180px;
+  background: #A38B5F;
+  color: #282828;
+  font-weight: bold;
+  margin-top: 40px;
+  border:none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.mainBox {
+  height: 350px;
+  width: 300px;
+  background: #A38B5F;
+  position: absolute;
+  z-index: 2;
+  margin-top: 500px;
+  top: 18%;
+  left: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 4px;
+}
+.mainBoxSpan1 {
+font-size: 16px;
+font-weight: bold;
+color: #282828;
+padding-left: 30px;
+}
+.mainBoxSpan2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #282828;
+}
+.mainBoxSpan3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #282828;
+  padding: 20px 0 0 30px;
+}
+.boldNumber {
+  padding: 40px 0 0 30px;
+}
+.bold {
+  font-size: 26px;
+  font-weight: bold;
+  color: #282828;
+}
+
+.mainButton2 {
+  height: 70px;
+  width: 200px;
+  background: #000B14;
+  color: white;
+  font-weight: bold;
+  border:none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 40px 0 0 30px;
+}
+
+/* ---------------BIG 3---------------  */
+
+.big3s2 {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.big3Icon {
+  width: 20%;
+}
+.big3Headline {
+  font-size: 24px;
+  font-weight: bold;
+  color: #A38B5F;
+  padding-top: 25px;
+}
+.big3Paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A38B5F;
+  padding: 20px 0 0 0;
+  line-height: 15px;
+}
+.beauticians, .quality, .products  {
+  display: flex;
+  height: 100%;
+  width: 33.33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+}
+
+/* ---------------MOMENTUM---------------  */
+.momentum {
+  width: 100%;
+  height: 660px;
+  background: #313B47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.momentumeColumn1 {
+  width: 50%;
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 100px 0 200px;
+}
+.momentumHeadline {
+  font-size: 44px;
+  font-weight: bold;
+  color: #A38B5F;
+  padding-bottom: 10px;
+}
+.momentumParagraph {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A38B5F;
+  line-height: 25px;
+  padding-top: 20px;
+}
+.momentumeColumn2 {
+  width: 50%;
+  height: 660px;
+  display: flex;
+  align-items: center
+}
+.momentumPhoto {
+  width: 75%;
+}
+
+/* ---------------SERVICES---------------  */
+.services {
+width: 80%;
+height: 660px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+.services1, .services2, .services3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.servicesBox {
+  height: 15%;
+  width: 40%;
+  background: #A38B5F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 96%;
+  border-radius: 4px;
+  box-shadow: 10px 5px 5px #282828;
+}
+
+.servicesBox span {
+  font-size: 1rem;
+  color: #282828;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.serviceimg {
+  width: 60%;
+  box-shadow: 10px 8px 8px #1a1919;
+}
+
+/* ---------------COUPON---------------  */
+.coupon {
+width: 100%;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+.coupon2 {
+  display: flex;
+  width: 800px;
+  height: 300px;
+  align-items: center;
+  background-image: url("./imgs/coupon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.couponBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+}
+
+.couponSpan1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4e4e4e;
+  padding-bottom: 20px;
+}
+
+.couponSpan2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+.couponSpan3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #4e4e4e;
+  padding-bottom: 20px;
+}
+.couponParagraph {
+padding-bottom: 20px;
+}
+
+.couponBold {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a38b5f;
+}
+
+.couponButton {
+  height: 5rem;
+  width: 15rem;
+  background: #122133;
+  color: #adadad;
+  font-weight: bold;
+  border:none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* ---------------LOOKBOOK---------------  */
+.lookbook {
+width: 100%;
+height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+.lookbookHeadline {
+  font-size: 44px;
+  font-weight: bold;
+  color: #A38B5F;
+}
+.lookbookDash {
+  font-size: 44px;
+  font-weight: bold;
+  color: #A38B5F;
+}
+
+/* ---------------GALLERY---------------  */
+.gallery  {
+width: 100%;
+height: 1300px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 2rem;
+padding: 50px 0;
+}
+
+.galleryColumn1, .galleryColumn2, .galleryColumn3 {
+  width: 20%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1680px) {.gallery{height:1150px}}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+  
+  /* ------------------MEDIA QUERY-LARGER SCREENS AND LARGER TABLETS---------------------- */
+  
+  @media screen and (min-width: 1024px) and (max-width: 1440px){
+    /* ---------------HEADER---------------  */
+    .logo {font-size: 40px}
+
+    li {padding: 0 15px}
+    /* ---------------MAIN---------------  */
+    .main {
+    height: 800px;
+    padding-left: 80px;
+    }
+
+    .mainHeadline {font-size: 60px}
+
+    .mainStatement {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    .mainButton1 {
+      height: 50px;
+      width: 150px;
+    }
+
+    .mainBox {
+      height: 300px;
+      width: 250px;
+      top: 8%;
+      left: 6%;
+    }
+
+    .mainBoxSpan1 {padding-left: 20px}
+
+    .mainBoxSpan3 {padding: 20px 0 0 20px;}
+
+    .boldNumber {padding: 40px 0 0 20px;}
+
+    .bold {font-size: 20px;}
+
+    .mainButton2 {
+      height: 50px;
+      width: 150px;
+      font-size: 12px;
+      margin: 40px 0 0 20px;
+    }
+
+    /* ---------------BIG 3---------------  */
+    .big3s2 {padding: 0 100px}
+
+    .big3Headline {font-size: 20px}
+
+    .big3Paragraph {line-height: 20px}
+
+    /* ---------------MOMENTUM---------------  */
+    .momentum {height: 600px}
+
+    .momentumeColumn1 {
+      height: 600px;
+      padding: 0 50px 0 70px;
+    }
+    .momentumHeadline {font-size: 34px}
+
+    .momentumParagraph {line-height: 20px}
+
+    .momentumeColumn2 {height: 600px}
+
+    /* ---------------SERVICES---------------  */
+    .services {
+      width: 100%;
+      height: 500px;
+    }
+    
+    /* ---------------COUPON---------------  */
+    /* None.  */
+    
+
+    /* ---------------LOOKBOOK---------------  */
+    
+    .lookbookHeadline, .lookbookDash {font-size: 40px}
+  
+    /* ---------------GALLERY---------------  */
+
+    .gallery  {
+      width: 100%;
+      height: 1100px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 50px 0;
+    }
+    .galleryColumn {
+      width: 20%;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+  }
+
+  /* ------------------MEDIA QUERY-TABLETS, LAPTOPS---------------------- */
+
+@media screen and (min-width: 1023px) and (max-width: 1279px) {
+  /* ---------------HEADER---------------  */
+  .logo {font-size: 30px}
+  li, .navBook {font-size: 14px}
+
+  /* ---------------MAIN---------------  */
+  .main {
+    height: 600px;
+    padding-left: 60px;
+    padding: 150px 0 0 75px;
+    }
+
+  .mainHeadline {font-size: 50px}
+
+  .mainStatement {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .mainButton1 {
+    height: 40px;
+    width: 130px;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+
+  .mainBox {
+    height: 235px;
+    width: 200px;
+    top: 8%;
+    left: 6%;
+    margin-top: 30%;
+  }
+
+  .mainBoxSpan1 {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .mainBoxSpan2 {font-size: 14px}
+
+  .mainBoxSpan3 {
+    font-size: 14px;
+    padding: 13px 0 0 20px;
+  }
+
+  .boldNumber {
+    padding: 25px 0 0 20px;
+  }
+
+  .bold {
+    font-size: 17px;
+  }
+  
+  .mainButton2 {
+    height: 45px;
+    width: 135px;
+    background: #000B14;
+    color: white;
+    font-weight: bold;
+    border:none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 25px 0 0 20px;
+  }
+
+  /* ---------------BIG 3---------------  */
+
+  .big3s2 {
+    height: 265px;
+    padding: 0 100px;
+  }
+
+  .big3Icon {
+    width: 13%;
+  }
+  .big3Headline {
+    font-size: 16.5px;
+    padding-top: 16.5px;
+  }
+  .big3Paragraph {
+    font-size: 9.3px;
+    padding-top: 13px;
+    line-height: 10px;
+  }
+  .beauticians, .quality, .products  {
+    padding: 0 35px;
+  }
+
+  /* ---------------MOMENTUM---------------  */
+  .momentum {height: 440px}
+
+  .momentumeColumn1 {
+    height: 440px;
+    padding: 0 66px 0 133px;
+  }
+
+  .momentumHeadline {
+    font-size: 30px;
+    font-weight: bold;
+    color: #A38B5F;
+    padding-bottom: 6.66px;
+  }
+
+  .momentumParagraph {
+    font-size: 9.3px;
+    line-height: 20px;
+    padding-top: 13.5px;
+  }
+
+  .momentumeColumn2 {height: 440px}
+
+  /* ---------------SERVICES---------------  */
+  .services {
+    width: 80%;
+    height: 440px
+  }
+
+  /* ---------------COUPON---------------  */
+  .coupon {
+    height: 200px;
+    margin-top: 40px;
+  }
+  
+  .coupon2 {
+    width: 650px;
+    height: 200px;
+  }
+  
+  .couponBox {
+    padding-left: 6.66%;
+  }
+  
+  .couponSpan1 {
+    font-size: 1.6rem;
+    padding-bottom: 13.3px;
+  }
+  
+  .couponSpan2 {
+    font-size: 1rem;
+  }
+  .couponSpan3 {
+    font-size: 1rem;
+    padding-bottom: 13.3px;
+  }
+  .couponParagraph {
+    padding-bottom: 13.3px;
+  }
+  
+  .couponBold {
+    font-size: 1.33rem;
+  }
+  
+  .couponButton {
+    height: 3.5rem;
+    width: 10rem;
+    font-size: 0.67rem;
+  }
+
+  /* ---------------LOOKBOOK---------------  */
+  .lookbook {height: 167px}
+
+  .lookbookHeadline, .lookbookDash {font-size: 30px}
+  
+  /* ---------------GALLERY---------------  */
+  .gallery  {
+    height: 800px;
+    padding: 35px 0;
+  }
+  .galleryColumn {
+    width: 20%;
+    height: 667px;
+  }
+
+}
+
+/* ------------------MEDIA QUERY-TABLET PORTRAIT---------------------- */
+
+  @media screen and (min-width: 800px) and (max-width: 1022px){
+  /* ---------------HEADER---------------  */
+  .logo {font-size: 25px}
+  li, .navBook {font-size: 12px}
+  li {padding: 0 15px}
+
+  /* ---------------MAIN---------------  */
+  .main {
+    height: 570px;
+    padding: 114px 0 0 70px;
+    }
+
+  .mainHeadline {font-size: 45px; padding-bottom: 12px}
+
+  .mainStatement {
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+  }
+
+  .mainButton1 {
+    height: 34px;
+    width: 103px;
+    margin-top: 23px;
+    font-size: 8px;
+  }
+
+  .mainBox {
+    height: 200px;
+    width: 171px;
+    top: 8%;
+    left: 6%;
+    margin-top: 268px;
+  }
+
+  .mainBoxSpan1 {
+    font-size: 9px;
+    padding-left: 17px;
+  }
+
+  .mainBoxSpan2 {font-size: 9px}
+
+  .mainBoxSpan3 {
+    font-size: 9px;
+    padding: 11.5px 0 0 17px;
+  }
+
+  .boldNumber {
+    padding: 23px 0 0 17px;
+  }
+
+  .bold {
+    font-size: 14.5px;
+  }
+  
+  .mainButton2 {
+    height: 40px;
+    width: 114px;
+    font-size: 10px;
+    margin: 22.7px 0 0 17px;
+  }
+
+  /* ---------------BIG 3---------------  */
+
+  .big3s2 {
+    height: 228px;
+    padding: 0 85px;
+  }
+
+  .big3Icon {
+    width: 11.5%;
+  }
+  .big3Headline {
+    font-size: 13.7px;
+    padding-top: 13.7px;
+  }
+  .big3Paragraph {
+    font-size: 8px;
+    padding-top: 11.4px;
+    line-height: 8.5px;
+  }
+  .beauticians, .quality, .products  {
+    padding: 0 29px;
+  }
+
+  /* ---------------MOMENTUM---------------  */
+  .momentum {height: 337px}
+
+  .momentumeColumn1 {
+    height: 337px;
+    padding: 0 57px 0 114px;
+  }
+
+  .momentumHeadline {
+    font-size: 25px;
+    padding-bottom: 5.7px;
+  }
+
+  .momentumParagraph {
+    font-size: 8px;
+    line-height: 14px;
+    padding-top: 11px;
+  }
+
+  .momentumeColumn2 {height: 337px}
+
+  /* ---------------SERVICES---------------  */
+  .services {
+    width: 80%;
+    height: 337px
+  }
+
+  .servicesBox span {font-size: 0.8rem}
+
+  /* ---------------COUPON---------------  */
+  .coupon {
+    height: 171px;
+    margin-top: 29px;
+  }
+  
+  .coupon2 {
+    width: 458px;
+    height: 171px;
+  }
+  
+  .couponBox {
+    padding-left: 5.7%;
+  }
+  
+  .couponSpan1 {
+    font-size: 0.8rem;
+    padding-bottom: 11.5px;
+  }
+  
+  .couponSpan2 {
+    font-size: 1rem;
+  }
+  .couponSpan3 {
+    font-size: 1rem;
+    padding-bottom: 11.5px;
+  }
+  .couponParagraph {
+    padding-bottom: 11.5px;
+  }
+  
+  .couponBold {
+    font-size: 1.1rem;
+  }
+  
+  .couponButton {
+    height: 2.85rem;
+    width: 8.5rem;
+    font-size: 0.67rem;
+  }
+
+  /* ---------------LOOKBOOK---------------  */
+  .lookbook {height: 142px}
+
+  .lookbookHeadline, .lookbookDash {font-size: 25px}
+  
+  /* ---------------GALLERY---------------  */
+  .gallery  {
+    height: 740px;
+    padding: 28px 0;
+  }
+  .galleryColumn {
+    height: 570px;
+  }
+    
+}
+
+@media screen and (min-width: 700px) and (max-width: 1233px) and (min-height: 800px) and (max-height: 1024px) {
+  /* ---------------MAIN---------------  */
+  .main {
+    height: 600px;
+    padding-left: 60px;
+    padding: 150px 0 0 75px;
+    }
+
+  .mainHeadline {font-size: 50px}
+
+  .mainStatement {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .mainButton1 {
+    height: 40px;
+    width: 130px;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+  
+  .mainBox {
+    height: 200px;
+    width: 171px;
+    top: 8%;
+    left: 6%;
+    margin-top: 24rem;
+  }
+
+  .mainBoxSpan1 {
+    font-size: 9px;
+    padding-left: 17px;
+  }
+
+  .mainBoxSpan2 {font-size: 9px}
+
+  .mainBoxSpan3 {
+    font-size: 9px;
+    padding: 11.5px 0 0 17px;
+  }
+
+  .boldNumber {
+    padding: 23px 0 0 17px;
+  }
+
+  .bold {
+    font-size: 14.5px;
+  }
+  
+  .mainButton2 {
+    height: 40px;
+    width: 114px;
+    font-size: 10px;
+    margin: 22.7px 0 0 17px;
+  }
+}
+
+/* --------------------- Quick for a nav issue ----------------------  */
+  @media screen and (min-width: 799px) and (max-width: 845px){
+    /* ---------------HEADER---------------  */
+    .logo {font-size: 20px}
+    li, .navBook {font-size: 10px}
+
+}
+
+/* ------------------ iPad Pro - Portrait Mode ---------------------- */
+  @media (min-width: 1024px) and (min-height: 1366px) {
+    .mainBox {
+      height: 200px;
+      width: 171px;
+      top: 8%;
+      left: 7%;
+      margin-top: 350px;
+    }
+    .mainBoxSpan1 {
+      font-size: 12px;
+      padding-left: 18px;
+    }
+  
+    .mainBoxSpan2 {font-size: 12px}
+  
+    .mainBoxSpan3 {
+      font-size: 12px;
+      padding: 13px 0 0 18px;
+    }
+  
+    .boldNumber {
+      padding: 20px 0 0 18px;
+    }
+  
+    .bold {
+      font-size: 16px;
+    }
+    
+    .mainButton2 {
+      height: 35px;
+      width: 125px;
+      font-size: 12px;
+      margin: 18px 0 0 18px;
+    }
+  }
+
+
+
+/* ------------------MEDIA QUERY-TABLET PORTRAIT---------------------- */
+
+@media screen and (min-width: 600px) and (max-width: 799px){
+  /* ---------------HEADER---------------  */
+  .logo {font-size: 25px}
+  li, .navBook {font-size: 12px}
+  li {padding: 0 15px}
+
+  /* ---------------MAIN---------------  */
+  .main {
+    height: 570px;
+    padding: 114px 0 0 70px;
+    }
+
+  .mainHeadline {font-size: 45px; padding-bottom: 12px}
+
+  .mainStatement {
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+  }
+
+  .mainButton1 {
+    height: 34px;
+    width: 103px;
+    margin-top: 23px;
+    font-size: 8px;
+  }
+
+  .mainBox {
+    height: 200px;
+    width: 171px;
+    top: 8%;
+    left: 6%;
+    margin-top: 320px;
+  }
+
+  .mainBoxSpan1 {
+    font-size: 9px;
+    padding-left: 17px;
+  }
+
+  .mainBoxSpan2 {font-size: 9px}
+
+  .mainBoxSpan3 {
+    font-size: 9px;
+    padding: 11.5px 0 0 17px;
+  }
+
+  .boldNumber {
+    padding: 23px 0 0 17px;
+  }
+
+  .bold {
+    font-size: 14.5px;
+  }
+  
+  .mainButton2 {
+    height: 40px;
+    width: 114px;
+    font-size: 10px;
+    margin: 22.7px 0 0 17px;
+  }
+
+  /* ---------------BIG 3---------------  */
+
+  .big3s2 {
+    height: 228px;
+    padding: 0 85px;
+  }
+
+  .big3Icon {
+    width: 11.5%;
+  }
+  .big3Headline {
+    font-size: 13.7px;
+    padding-top: 13.7px;
+  }
+  .big3Paragraph {
+    font-size: 8px;
+    padding-top: 11.4px;
+    line-height: 8.5px;
+  }
+  .beauticians, .quality, .products  {
+    padding: 0 29px;
+  }
+
+  /* ---------------MOMENTUM---------------  */
+  .momentum {height: 337px}
+
+  .momentumeColumn1 {
+    height: 337px;
+    padding: 0 57px 0 114px;
+  }
+
+  .momentumHeadline {
+    font-size: 25px;
+    padding-bottom: 5.7px;
+  }
+
+  .momentumParagraph {
+    font-size: 8px;
+    line-height: 14px;
+    padding-top: 11px;
+  }
+
+  .momentumeColumn2 {height: 337px}
+
+  /* ---------------SERVICES---------------  */
+  .services {
+    width: 80%;
+    height: 337px
+  }
+
+  .servicesBox span {font-size: 0.8rem}
+
+  /* ---------------COUPON---------------  */
+  .coupon {
+    height: 171px;
+    margin-top: 29px;
+  }
+  
+  .coupon2 {
+    width: 458px;
+    height: 171px;
+  }
+  
+  .couponBox {
+    padding-left: 5.7%;
+  }
+  
+  .couponSpan1 {
+    font-size: 0.8rem;
+    padding-bottom: 11.5px;
+  }
+  
+  .couponSpan2 {
+    font-size: 1rem;
+  }
+  .couponSpan3 {
+    font-size: 1rem;
+    padding-bottom: 11.5px;
+  }
+  .couponParagraph {
+    padding-bottom: 11.5px;
+  }
+  
+  .couponBold {
+    font-size: 1.1rem;
+  }
+  
+  .couponButton {
+    height: 2.85rem;
+    width: 8.5rem;
+    font-size: 0.67rem;
+  }
+
+  /* ---------------LOOKBOOK---------------  */
+  .lookbook {height: 142px}
+
+  .lookbookHeadline, .lookbookDash {font-size: 25px}
+  
+  /* ---------------GALLERY---------------  */
+  .gallery  {
+    height: 740px;
+    padding: 28px 0;
+  }
+  .galleryColumn {
+    height: 570px;
+  }
+}
+
+/* -------------------------- iPhones idk ---------------- */
+@media (min-width: 320px) and (max-width: 500px) and (min-height: 500px) and (max-height: 900px) {
+  /* ---------------HEADER---------------  */
+	header {
+		width: 100%;
+		height: 50px;
+	}
+	nav {
+		width: 100%;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+    gap: 20px;
+	}
+	nav ul {
+		display: none;
+	}
+	nav img {
+    display: block;
+		width: 7%;
+	}
+	.logo {
+    display: flex;
+		color: #A38B5F;
+		font-size: 40px;
+	}
+	.navBook {
+		display: none;
+	}
+
+	/* ---------------MAIN---------------  */
+	.main {
+	width: 100%;
+	height: 400px;
+	padding: 150px 0 0 40px;
+  background-position: 60% 10%;
+  border-bottom-right-radius: 150px;
+  clip-path: polygon(0 80%, 0 0, 100% 0, 100% 100%);
+	}
+	.mainHeadline {
+	  font-size: 24px;
+	  padding: 0 0 5px 0;
+	}
+	.mainStatement {
+	  font-size: 8px;
+	  padding-top: 10px;
+	  letter-spacing: 0px;
+	}
+	.mainButton1 {
+	  height: 30px;
+	  width: 100px;
+	  margin-top: 20px;
+	  font-size: 10px;
+
+	}
+	.mainBox {
+	 display: none;
+	}
+
+	/* ---------------BIG 3---------------  */
+	.big3s2 {
+	width: 100%;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px 30px 0;
+	}
+	.big3Icon {
+	  width: 15%;
+	}
+	.big3Headline {
+	  font-size: 16px;
+	  padding-top: 25px;
+		line-height: 20px;
+	}
+	.big3Paragraph {
+	  font-size: 12px;
+	  font-weight: 400;
+	  color: #A38B5F;
+	  padding: 20px 20px 0 20px;
+	  line-height: 15px;
+	}
+	.quality, .beauticians, .products  {
+		width: 100%;
+		height: 225px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	  padding: 0 20px;
+	}
+	/* ---------------MOMENTUM---------------  */
+	.momentum {
+	width: 100%;
+	height: 700px;
+	background: #313B47;
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	}
+	.momentumeColumn1 {
+	  width: 100%;
+	  height: 50%;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 0 40px 20px 40px;
+	}
+	.momentumHeadline {
+	  font-size: 16px;
+	  padding-bottom: 10px;
+	}
+	.momentumParagraph {
+		font-size: 12px;
+	  line-height: 20px;
+	  padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+	}
+	.momentumeColumn2 {
+	  width: 100%;
+	  height: 300px;
+    padding-top: 30px;
+	}
+	.momentumPhoto {
+	  width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+	/* ---------------SERVICES---------------  */
+	.services {
+		width: 80%;
+		height: 1000px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    gap: 80px;
+    padding: 20px 0 0 20px;
+	}
+	.serviceimg {
+		width: 60%;
+	}
+	.servicesBox {
+	  height: 40px;
+	  width: 120px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  position: absolute;
+	  top: 95%;
+	}
+	.services span {
+	  font-size: 12px;
+	}
+
+	/* ---------------COUPON---------------  */
+  .coupon {
+    height: 150px;
+    margin-top: 70px;
+  }
+  
+  .coupon2 {
+    width: 350px;
+    height: 170px;
+  }
+  
+  .couponBox {
+    padding-left: 5.7%;
+  }
+  
+  .couponSpan1 {
+    font-size: 0.8rem;
+    padding-bottom: 11.5px;
+  }
+  
+  .couponSpan2 {
+    font-size: 0.8rem;
+  }
+  .couponSpan3 {
+    font-size: 0.8rem;
+    padding-bottom: 11.5px;
+  }
+  .couponParagraph {
+    padding-bottom: 11.5px;
+  }
+  
+  .couponBold {
+    font-size: 1.1rem;
+  }
+  
+  .couponButton {
+    height: 2.5rem;
+    width: 8rem;
+    font-size: 0.7rem;
+  }
+
+	/* ---------------LOOKBOOK---------------  */
+	.lookbook {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	}
+	.lookbookHeadline, .lookbookDash {
+	  font-size: 24px;
+	  font-weight: bold;
+	  color: #A38B5F;
+	}
+
+	/* ---------------GALLERY---------------  */
+	.gallery  {
+		width: 100%;
+		height: 425px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 1rem;
+    padding: 0;
+	}
+	.galleryColumn {
+	  width: 25%;
+	  height: 350px;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  gap: 1rem;
+	}
+	.galleryLong, .galleryShort {
+		width: 100%;
+	}
+}
