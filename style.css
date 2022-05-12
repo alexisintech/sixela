@@ -445,7 +445,7 @@ padding: 50px 0;
   gap: 2rem;
 }
 
-@media screen and (max-width: 1680px) {.gallery{height:1150px}}
+@media screen and (max-width: 1680px) {.gallery{height:1100px}}
 
 /******************************************
 /* MEDIA QUERIES
@@ -506,12 +506,15 @@ padding: 50px 0;
 
     .big3Paragraph {line-height: 20px}
 
+    .beauticians, .quality, .products  {
+      padding: 0 35px;
+    }
+
     /* ---------------MOMENTUM---------------  */
     .momentum {height: 600px}
 
     .momentumeColumn1 {
       height: 600px;
-      padding: 0 50px 0 70px;
     }
     .momentumHeadline {font-size: 34px}
 
@@ -522,7 +525,7 @@ padding: 50px 0;
     /* ---------------SERVICES---------------  */
     .services {
       width: 100%;
-      height: 500px;
+      height: 600px;
     }
     
     /* ---------------COUPON---------------  */
@@ -532,17 +535,18 @@ padding: 50px 0;
     /* ---------------LOOKBOOK---------------  */
     
     .lookbookHeadline, .lookbookDash {font-size: 40px}
+    .lookbook {height: 225px}
   
     /* ---------------GALLERY---------------  */
 
     .gallery  {
       width: 100%;
-      height: 1100px;
+      height: 1050px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
       gap: 2rem;
-      padding: 50px 0;
+      padding: 50px 0 0 0;
     }
     .galleryColumn {
       width: 20%;
@@ -552,6 +556,26 @@ padding: 50px 0;
       gap: 2rem;
     }
 
+  }
+
+  /*Breakpoint*/
+  @media all and (min-width: 1089px) and (max-width: 1150px) {
+    .beauticians, .quality, .products  {
+      padding: 0 25px !important;
+    }
+  }
+
+  @media all and (min-width: 1029px) and (max-width: 1088px) {
+    .beauticians, .quality, .products  {
+      padding: 0 15px;
+    }
+  }
+
+  /*Breakpoint*/
+  @media all and (min-width: 1023px) and (max-width: 1028px) {
+    .beauticians, .quality, .products  {
+      padding: 0 10px !important;
+    }
   }
 
   /* ------------------MEDIA QUERY-TABLETS, LAPTOPS---------------------- */
@@ -641,9 +665,6 @@ padding: 50px 0;
     padding-top: 13px;
     line-height: 10px;
   }
-  .beauticians, .quality, .products  {
-    padding: 0 35px;
-  }
 
   /* ---------------MOMENTUM---------------  */
   .momentum {height: 440px}
@@ -722,8 +743,8 @@ padding: 50px 0;
   
   /* ---------------GALLERY---------------  */
   .gallery  {
-    height: 800px;
-    padding: 35px 0;
+    height: 750px;
+    padding: 35px 0 0 0;
   }
   .galleryColumn {
     width: 20%;
