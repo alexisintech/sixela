@@ -1,5 +1,5 @@
 # [Sixela Salon](https://alexisintech.github.io/sixela/)
-Sixela Salon has passionate, exceptionally experienced beauticians waiting to make your visions come to life!
+~ Sixela Salon has passionate, exceptionally experienced beauticians waiting to make your visions come to life! ~
 
 <div>
   <a href="https://alexisintech.github.io/sixela/" target=_blank>
