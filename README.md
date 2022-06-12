@@ -3,7 +3,7 @@
 
 <div>
   <a href="https://alexisintech.github.io/sixela/" target=_blank>
-    <img src="sixela.gif" height="100%" />
+    <img src="sixela.gif" width="100%" />
   </a>
 </div>
 
